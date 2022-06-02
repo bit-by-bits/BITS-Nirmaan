@@ -21,15 +21,20 @@
 
   /*relative as span becomes absolute about club*/
   .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    width: 300px
+    width: 300px;
+    height: 500px;
   }
 
-  .tile .image {
+  .tile img {
     border-radius: 500px;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
+    padding: 0.5rem;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
     border-color: #ffb300;
     border-style: inset;
     border-width: 3px;
@@ -59,12 +64,12 @@
   .line-gap {
     line-height: 1.2em;
   }
-  
+
   .heading-leads {
     display: flex;
     justify-content: center;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   /*for mobile phones*/
@@ -77,7 +82,7 @@
 
     .container>div {
       margin: 4vw;
-      padding: 0;;
+      padding: 0;
       border-radius: 6.66%;
     }
 
@@ -101,168 +106,208 @@
 
     <!--Prez-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
-        <center><img 
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;" 
+      <div class="tile bg-gray-100 p-6 rounded-lg">
+        <center><img
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Harshal Sharma</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">President</h1>
-        <p><a href="tel:7023516991">Ph: 7023516991</a></p>
-        <a href="mailto:f20200246@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Harshal
+            Sharma</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">President</h3>
+          <p><a href="tel:7023516991">Ph: 7023516991</a></p>
+          <a href="mailto:f20200246@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--Vice-Prez-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Naman Gupta</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Vice-President</h3>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Naman
+            Gupta</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Vice-President</h3>
           <p><a href="tel:9830316345">Ph: 9830316345</a></p>
-          <a href="mailto:f20200735@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+          <a href="mailto:f20200735@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--HRD Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Srijan Shashwat</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Human Resources Development</h3>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Srijan
+            Shashwat</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Human
+            Resources Development</h3>
           <p><a href="tel:9431711435">Ph: 9431711435</a></p>
-          <a href="mailto:f20200091@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+          <a href="mailto:f20200091@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--Finance Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Ayush Kulkarni </h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Finance
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Ayush
+            Kulkarni </h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Finance
           </h3>
           <p><a href="tel:9511798295">Ph: 9511798295</a></p>
-          <a href="mailto:f20200606@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+          <a href="mailto:f20200606@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--PRD Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Himanshi Lamba</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Public Relations Department
-        </h3>
-        <p><a href="tel:9929019300">Ph: 9929019300</a></p>
-        <a href="mailto:f20201270@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Himanshi
+            Lamba</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Public
+            Relations Department
+          </h3>
+          <p><a href="tel:9929019300">Ph: 9929019300</a></p>
+          <a href="mailto:f20201270@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--EdDev Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Ekta Agarwal</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Educational Development
-        </h3>
-        <p><a href="tel:7976803399">Ph: 7976803399</a></p>
-        <a href="mailto:f20202045@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Ekta
+            Agarwal</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Educational
+            Development
+          </h3>
+          <p><a href="tel:7976803399">Ph: 7976803399</a></p>
+          <a href="mailto:f20202045@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--EdOps Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Aarsh Khare</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Educational
-          Operations
-        </h3>
-        <p><a href="tel:8448569681">Ph: 8448569681</a></p>
-        <a href="mailto:f20201791@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Aarsh
+            Khare</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Educational
+            Operations
+          </h3>
+          <p><a href="tel:8448569681">Ph: 8448569681</a></p>
+          <a href="mailto:f20201791@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--WomenEmp Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Kashika Sharma</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Women Empowerment
-        </h3>
-        <p><a href="tel:7906570881">Ph: 7906570881</a></p>
-        <a href="mailto:f20200863@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Kashika
+            Sharma</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Women
+            Empowerment
+          </h3>
+          <p><a href="tel:7906570881">Ph: 7906570881</a></p>
+          <a href="mailto:f20200863@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--ComDev Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Shreekar Puranik</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Community Development
-        </h3>
-        <p><a href="tel:7259813470">Ph: 7259813470</a></p>
-        <a href="mailto:f20200035@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Shreekar
+            Puranik</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Community
+            Development
+          </h3>
+          <p><a href="tel:7259813470">Ph: 7259813470</a></p>
+          <a href="mailto:f20200035@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--External Relations Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Siddhant Atrish</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Fund Raising and External Relations
-        </h3>
-        <p><a href="tel:7259813470">Ph: 8588814050</a></p>
-        <a href="mailto:f20200621@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Siddhant
+            Atrish</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Fund Raising
+            and External Relations
+          </h3>
+          <p><a href="tel:7259813470">Ph: 8588814050</a></p>
+          <a href="mailto:f20200621@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
 
     <!--Groung Ops Head-->
     <div class="box-leads xl:w-1/2 md:w-1/2 p-4 mb-20" style="width: 450px;">
-      <div class="tile bg-gray-100 p-6 rounded-lg" style="min-height: 450px;">
+      <div class="tile bg-gray-100 p-6 rounded-lg">
         <center><img
-            style="width: 200px; height: 30%; padding: 20px; border-radius: 200px; border-width: 3px; border-style:inset; border-color:#ffb300; margin-bottom: 10px;"
             src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-user-young-boy-avatar-icon-png-image_4827810.jpg"
             alt="content"></center>
-        <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Neetu Saini</h1>
-        <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Fund Raising and External Relations
-        </h3>
-        <p><a href="tel:7259813470">Ph: 6378984618</a></p>
-        <a href="mailto:f20201296@pilani.bits-pilani.ac.in" class="leading-relaxed text-base" style="bottom: 10px;">Email</a>
+        <div>
+          <h1 class="text-lg text-gray-900 font-medium title-font mb-4 line-gap" style="font-size: xx-large;">Neetu
+            Saini</h1>
+          <h3 class="text-lg text-gray-900 font-medium title-font mb-4" style="font-size: x-large;">Head of Fund Raising
+            and External Relations
+          </h3>
+          <p><a href="tel:7259813470">Ph: 6378984618</a></p>
+          <a href="mailto:f20201296@pilani.bits-pilani.ac.in" class="leading-relaxed text-base"
+            style="bottom: 10px;">Email</a>
+        </div>
       </div>
     </div>
-    
-</div>
+
+  </div>
 
 </div>
 
