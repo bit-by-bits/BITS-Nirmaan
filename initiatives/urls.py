@@ -4,6 +4,8 @@ from .views import (home, create_initiative, update_initiative,
                      InitiativeDeleteView, init_detail,
                      like_initiative, volunteers)
 from django.contrib.admin.views.decorators import staff_member_required
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('', home, name='home'),
@@ -15,3 +17,5 @@ urlpatterns = [
     path('<int:pk>/liked', like_initiative, name='like_initiative' ),
 ]
 
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
