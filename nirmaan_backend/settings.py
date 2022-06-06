@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY') or 'sffx$xu(ce8)nxre*!u89wmus4u8&!=v%p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True #(os.environ.get('DEBUG_VALUE')=='True') or True
 
-ALLOWED_HOSTS = ['nirmaan-bppc.herokuapp.com', 'localhost', '127.0.0.1', 'bitspilani.nirmaan.org', 'bitspilani-nirmaan.herokuapp.com', '165.227.106.47']
+ALLOWED_HOSTS = ['nirmaan-bppc.herokuapp.com', 'localhost', '127.0.0.1', 'bitspilani.nirmaan.org', 'bitspilani-nirmaan.herokuapp.com', '165.227.106.47', '192.46.209.242']
 
 # Application definition
 
