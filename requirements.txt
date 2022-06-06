@@ -12,7 +12,7 @@ cryptography==2.8
 defusedxml==0.6.0
 dj-database-url==0.5.0
 dj-pagination==2.4.0
-Django==2.2
+Django==4.0.5
 django-allauth==0.40.0
 django-annoying==0.10.5
 django-cors-middleware==1.4.0
@@ -44,7 +44,7 @@ et-xmlfile==1.0.1
 fpdf==1.7.2
 gitdb2==2.0.6
 GitPython==3.0.4
-gunicorn==20.0.4
+gunicorn==20.1.0
 heroku==0.1.4
 idna==2.8
 imagesize==1.2.0
@@ -62,7 +62,7 @@ openpyxl==3.0.2
 packaging==19.2
 Pillow==6.2.1
 protobuf==3.6.1
-psycopg2-binary==2.8.4
+psycopg2-binary==2.9.3
 pycparser==2.19
 pycrypto==2.6.1
 Pygments==2.4.2
@@ -81,7 +81,7 @@ six==1.14.0
 slumber==0.7.1
 smmap2==2.0.5
 snowballstemmer==2.0.0
-sqlparse==0.3.0
+sqlparse==0.4.2
 stripe==2.38.0
 textblob==0.15.3
 ua-parser==0.8.0
