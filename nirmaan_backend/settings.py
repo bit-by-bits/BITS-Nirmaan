@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY') or 'sffx$xu(ce8)nxre*!u89wmus4u8&!=v%p!gu6v%hev$vt4jm7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False #(os.environ.get('DEBUG_VALUE')=='True') or True
+DEBUG = True #(os.environ.get('DEBUG_VALUE')=='True') or True
 
 ALLOWED_HOSTS = ['nirmaan-bppc.herokuapp.com', 'localhost', '127.0.0.1', 'bitspilani.nirmaan.org', 'bitspilani-nirmaan.herokuapp.com', '165.227.106.47', '192.46.209.242']
 
@@ -94,14 +94,20 @@ if DEBUG == True:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'bitsnirmaan',
-            'USER': 'admin',
-            'PASSWORD': 'bitsnirmaan314',
-            'HOST': 'localhost',
-            'PORT': '',
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #         'NAME': 'bitsnirmaan',
+    #         'USER': 'admin',
+    #         'PASSWORD': 'bitsnirmaan314',
+    #         'HOST': 'localhost',
+    #         'PORT': '',
+    #     }
+    # }
 
 
 # Password validation
