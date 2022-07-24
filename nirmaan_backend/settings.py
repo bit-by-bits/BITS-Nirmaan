@@ -208,3 +208,5 @@ ACCOUNT_FORMS = {
 }
 
 #django_heroku.settings(locals())
+
+FILE_UPLOAD_PERMISSIONS=0o640
