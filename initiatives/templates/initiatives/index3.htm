@@ -33,8 +33,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>
 
   <style>
+    .rakhi {
+      font-family: 'Roboto', sans-serif;
+    }
     @media only screen and (max-width: 600px){
       .dispbtn {
         background-color: #ffffff00; 
@@ -191,6 +195,12 @@
     .home {
       height: 75vh;
       width: 100vw;
+    }
+    .home1 {
+      height: 75vh;
+      width: 100vw;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
     }
 
     .item{
@@ -720,25 +730,31 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <!--<div class="item active">
+      <div class="item active">
         <br>
-        <img class="home" src="../../../media/sorad.jpg">
+        <img class="home1" src="../../../media/rakhi2.png">
         <div class="text dispbtn">
-          <h1 class="heading" style="color: white; font-weight: 800; text-transform: uppercase;">SAVE ONE RUPEE A DAY</h1>
+          <div class="rakhi">
+          <center>
+          <h1 class="heading" style="color: white; font-weight: 800; text-transform: uppercase;">PROJECT RAKHI</h1>
           
-          <a href="{% url 'sorad' %}">
+          
+          <a href="https://forms.gle/oN7UK98W3kmm6J2J8">
             <button class="team">
               LEARN MORE
             </button>
           </a>
+          </center>
+          </div>
         </div>
-      </div>-->
+      </div>
 
-      <div class="item active">
+      <div class="item">
         <img class="home" src="../../../media/1.JPG">
       </div>
     
