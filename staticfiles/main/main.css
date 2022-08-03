@@ -1,38 +1,37 @@
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
   position: relative;
-  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   vertical-align: middle;
-
 }
 
 .bgimg-1 {
   background-image: url("../../media/1mob.JPG");
   min-height: 100%;
-  webkit-filter: saturate(0%)contrast(120%)sepia(80%);
-  filter: saturate(0%)contrast(120%)sepia(80%);
+  webkit-filter: saturate(0%) contrast(120%) sepia(80%);
+  filter: saturate(0%) contrast(120%) sepia(80%);
 }
 
 .bgimg-2 {
   background-image: url("../../media/3.jpg");
   min-height: 100%;
-  webkit-filter: saturate(0%)contrast(110%)sepia(60%);
-  filter: saturate(0%)contrast(110%)sepia(60%);
+  webkit-filter: saturate(0%) contrast(110%) sepia(60%);
+  filter: saturate(0%) contrast(110%) sepia(60%);
 }
 
 .bgimg-3 {
   background-image: url("../../media/2.png");
   min-height: 100%;
-  webkit-filter: saturate(0%)sepia(60%);
-  filter: saturate(0%)contrast(110%)sepia(60%);
+  webkit-filter: saturate(0%) sepia(60%);
+  filter: saturate(0%) contrast(110%) sepia(60%);
 }
 
 body {
-  width:500px;
+  width: 500px;
   background: #fafafa;
   background-image: url("../../../media/1.JPG");
   background-attachment: fixed;
@@ -41,7 +40,12 @@ body {
   margin-top: 5rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #444444;
 }
 
@@ -68,7 +72,7 @@ ul {
 }
 
 .content-section {
-  width:900px;
+  width: 900px;
   background: #ffffff;
   padding: 0px 0px;
   border: 1px solid #dddddd;
@@ -81,12 +85,12 @@ ul {
 }
 
 a.article-title:hover {
-  color:#ffb300;
+  color: #ffb300;
   text-decoration: none;
 }
 
 .article-content {
-  width:900px;
+  width: 900px;
   white-space: pre-line;
 }
 
@@ -99,7 +103,7 @@ a.article-title:hover {
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .article-metadata a:hover {
@@ -124,9 +128,9 @@ a.article-title:hover {
   font-size: 2.5rem;
 }
 
-.rounded-circle logo-img{
-  height:50;
-  width:50;
+.rounded-circle logo-img {
+  height: 50;
+  width: 50;
 }
 
 .row {
@@ -134,11 +138,10 @@ a.article-title:hover {
 }
 
 .-content-section {
-  width:900px;
+  width: 900px;
   background: #ffffff;
   padding: 0px 0px;
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
 }
-
