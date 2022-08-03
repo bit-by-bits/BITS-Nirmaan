@@ -16,7 +16,7 @@
   <meta name="theme-color" content="black">
 
   <link rel="icon" href="../../../media/cropped-favicon-icon-32x32.png">
-  
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -32,35 +32,77 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
 
   <style>
     .rakhi {
       font-family: 'Roboto', sans-serif;
     }
-    @media only screen and (max-width: 600px){
+
+    @media only screen and (max-width: 600px) {
+
+      .footer-tr {
+        text-align: center;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .footer-tr td {
+        width: 90vw !important;
+      }
+
+      .footer-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .footer-tr * {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-inline-start: 0 !important;
+      }
+
+      .carousel-indicators {
+        transform: translateY(2rem);
+      }
+
       .dispbtn {
-        background-color: #ffffff00; 
-        border:none;
-        height: 24px; 
+        background-color: #ffffff00;
+        border: none;
+        height: 24px;
         width: 100%;
-        top: -100%; left: 50%; 
-        transform: translate(0%,-399%); 
-        margin:0 auto; 
-        font-size: inherit;  
+        top: -100%;
+        left: 50%;
+        transform: translate(0%, -399%);
+        margin: 0 auto;
+        font-size: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
       }
     }
 
     @media only screen and (min-width: 600px) {
       .dispbtn {
-        background-color: #ffffff00; 
-        border:none; 
-        display: inline-block; 
-        position: absolute; 
-        top: 50%; left: 50%; 
-        transform: translate(-50%,-50%); 
-        font-size: inherit;  
+        background-color: #ffffff00;
+        border: none;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: inherit;
       }
     }
 
@@ -157,21 +199,21 @@
       border-color: #000;
     }
 
-    .dropdown:hover .dropdown-menu{
+    .dropdown:hover .dropdown-menu {
       display: block;
     }
 
     .dropdown-item {
-        color: grey;
+      color: grey;
     }
 
-    .dropdown-item:hover{
+    .dropdown-item:hover {
       color: #ffb300;
     }
 
-    @media (max-width:992px){
+    @media (max-width:992px) {
 
-      .nav-item{
+      .nav-item {
         background-color: black;
         padding-right: 10px;
       }
@@ -180,16 +222,16 @@
         background-color: #000;
       }
 
-      .nav-item:active .dropdown-menu{
+      .nav-item:active .dropdown-menu {
         background-color: #000;
-      } 
+      }
 
       .dropdown-item:active {
         background-color: #ffb300;
         color: #000;
       }
 
-      .chapter{
+      .chapter {
         display: none;
       }
     }
@@ -198,6 +240,7 @@
       height: 75vh;
       width: 100vw;
     }
+
     .home1 {
       height: 75vh;
       width: 100vw;
@@ -205,7 +248,7 @@
       -webkit-filter: blur(5px);
     }
 
-    .item{
+    .item {
       height: 95vh;
       width: 100vw;
     }
@@ -218,17 +261,18 @@
       background-color: black;
     }
 
-    @media only screen and (max-width:450px){
+    @media only screen and (max-width:450px) {
       .item {
         height: 100vh;
-      }  
+      }
 
       .caro {
         margin-top: 5vh;
         height: 40vh;
       }
     }
-    @media only screen and (max-width:450px){
+
+    @media only screen and (max-width:450px) {
       .team {
         background-color: #ffb300;
         border-color: black;
@@ -254,7 +298,7 @@
       }
     }
 
-    @media only screen and (min-width:450px){
+    @media only screen and (min-width:450px) {
       .team {
         background-color: #ffb300;
         border-color: black;
@@ -387,10 +431,6 @@
       color: #111;
     }
 
-    .myDiv {
-      display: none;
-    }
-
     .logo {
       width: 50%;
       pointer-events: none;
@@ -409,7 +449,6 @@
       color: black;
       border-color: white;
     }
-
   </style>
 
   <style type="text/css">
@@ -488,92 +527,145 @@
     .mylink {
       color: white;
     }
-  
+
     .mylink:hover {
       color: #ffb300;
     }
-  
+
     .navbar-nav>li>a {
       color: white;
     }
 
-    @media only screen and (max-width: 600){
-      .chapter{
+    @media only screen and (max-width: 600) {
+      .chapter {
         display: none;
         opacity: 0;
       }
     }
-
   </style>
 
   <style>
+    @keyframes disappear {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
 
     @keyframes ldio-crsyt6vl0b {
-      0% { transform: translate(12px,80px) scale(0); }
-      25% { transform: translate(12px,80px) scale(0); }
-      50% { transform: translate(12px,80px) scale(1); }
-      75% { transform: translate(80px,80px) scale(1); }
-    100% { transform: translate(148px,80px) scale(1); }
+      0% {
+        transform: translate(12px, 80px) scale(0);
+      }
+
+      25% {
+        transform: translate(12px, 80px) scale(0);
+      }
+
+      50% {
+        transform: translate(12px, 80px) scale(1);
+      }
+
+      75% {
+        transform: translate(80px, 80px) scale(1);
+      }
+
+      100% {
+        transform: translate(148px, 80px) scale(1);
+      }
     }
+
     @keyframes ldio-crsyt6vl0b-r {
-      0% { transform: translate(148px,80px) scale(1); }
-    100% { transform: translate(148px,80px) scale(0); }
+      0% {
+        transform: translate(148px, 80px) scale(1);
+      }
+
+      100% {
+        transform: translate(148px, 80px) scale(0);
+      }
     }
+
     @keyframes ldio-crsyt6vl0b-c {
-      0% { background:#003c7a}
-      25% { background: #4aa223 }
-      50% { background: #dc0019 }
-      75% { background: #fcb900 }
-    100% { background: #003c7a }
+      0% {
+        background: #003c7a
+      }
+
+      25% {
+        background: #4aa223
+      }
+
+      50% {
+        background: #dc0019
+      }
+
+      75% {
+        background: #fcb900
+      }
+
+      100% {
+        background: #003c7a
+      }
     }
+
     .ldio-crsyt6vl0b div {
       position: absolute;
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      transform: translate(80px,80px) scale(1);
+      transform: translate(80px, 80px) scale(1);
       background: #003c7a;
-      animation: ldio-crsyt6vl0b 2.0408163265306123s infinite cubic-bezier(0,0.5,0.5,1);
+      animation: ldio-crsyt6vl0b 2.0408163265306123s infinite cubic-bezier(0, 0.5, 0.5, 1);
     }
+
     .ldio-crsyt6vl0b div:nth-child(1) {
       background: #fcb900;
-      transform: translate(148px,80px) scale(1);
-      animation: ldio-crsyt6vl0b-r 0.5102040816326531s infinite cubic-bezier(0,0.5,0.5,1), ldio-crsyt6vl0b-c 2.0408163265306123s infinite step-start;
-    }.ldio-crsyt6vl0b div:nth-child(2) {
+      transform: translate(148px, 80px) scale(1);
+      animation: ldio-crsyt6vl0b-r 0.5102040816326531s infinite cubic-bezier(0, 0.5, 0.5, 1), ldio-crsyt6vl0b-c 2.0408163265306123s infinite step-start;
+    }
+
+    .ldio-crsyt6vl0b div:nth-child(2) {
       animation-delay: -0.5102040816326531s;
       background: #003c7a;
-    }.ldio-crsyt6vl0b div:nth-child(3) {
+    }
+
+    .ldio-crsyt6vl0b div:nth-child(3) {
       animation-delay: -1.0204081632653061s;
       background: #fcb900;
-    }.ldio-crsyt6vl0b div:nth-child(4) {
+    }
+
+    .ldio-crsyt6vl0b div:nth-child(4) {
       animation-delay: -1.530612244897959s;
       background: #dc0019;
-    }.ldio-crsyt6vl0b div:nth-child(5) {
+    }
+
+    .ldio-crsyt6vl0b div:nth-child(5) {
       animation-delay: -2.0408163265306123s;
       background: #4aa223;
     }
+
     .loadingio-spinner-ellipsis-30fdu4rroq4 {
       width: 227px;
       height: 227px;
-      margin-top: 15%;
-      
       display: inline-block;
-      overflow: hidden;
-      background: black;
     }
+
     .ldio-crsyt6vl0b {
       width: 100%;
       height: 100%;
-      margin-top: 15%;
-      
       position: relative;
       transform: translateZ(0) scale(1);
       backface-visibility: hidden;
-      transform-origin: 0 0; /* see note above */
+      transform-origin: 0 0;
+      /* see note above */
     }
-    .ldio-crsyt6vl0b div { box-sizing: content-box; }
-    /* generated by https://loading.io/ */
 
+    .ldio-crsyt6vl0b div {
+      box-sizing: content-box;
+    }
+
+    /* generated by https://loading.io/ */
   </style>
 
 </head>
@@ -594,111 +686,117 @@
     }
   </style>
 
-  <center>
-  <div id="loader" class="loadingio-spinner-ellipsis-30fdu4rroq4">
-    <div class="ldio-crsyt6vl0b">
-      <div></div><div></div><div></div><div></div><div></div>
+  <div class="loader-wrapper">
+    <div id="loader" class="loadingio-spinner-ellipsis-30fdu4rroq4">
+      <div class="ldio-crsyt6vl0b">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   </div>
-  </center>
 
-  <header class="site-header-fullwidth"> 
+  <header class="site-header-fullwidth">
     <nav id="navbar" class="navbar navbar-expand-lg">
-  
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-      <span class="navbar-toggler-icon">&#9776</span>
-      </button>
-    </div>
 
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="navbar-nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'about' %}">About</a>
-        </li>
-
-    <li class="nav-item dropdown" style="margin-left: 0;">
-      <a href="{% url 'home' %}" class="nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="true" onfocus="drop()" id="dropdown">Projects
-      </a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
-        <a class="dropdown-item" href="/projects/sko">Siksha Ki Ore</a>
-        <a class="dropdown-item" href="/projects/disha">Disha</a>
-        <a class="dropdown-item" href="/projects/utkarsh">Utkarsh</a>
-        <a class="dropdown-item" href="/projects/gb_baas">Gyan Bodh</a>
-        <a class="dropdown-item" href="/projects/pcd">Participatory Community Development</a>
-        <a class="dropdown-item" href="/projects/unnati_1">Unnati</a>
-        <a class="dropdown-item" href="/projects/unnati_2">Swayamshakti</a>
-        <a class="dropdown-item" href="/projects/sap">School Adoption Programme</a>
-        <a class="dropdown-item" href="/projects/pkp">Pilani Ki Pathshala</a>
-        <a class="dropdown-item" href="/projects/ye">Udaan</a>
-        <a class="dropdown-item" href="/projects/Pragati">Pragati</a>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="navbar-toggler-icon">&#9776</span>
+        </button>
       </div>
-    </li>
-
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'register_visitor' %}">Contact</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'mask_register' %}">Peahen</a>
-    </li>
-    
-    {% if user.is_superuser %}
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'all_visitors' %}">Visitors</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'masks_dash' %}">SALES</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-    </li>
-    
-    {% elif user.volunteer.is_pl %}
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'donations' %}">Donations</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'pl_dashboard' %}">Hi, {{ user.volunteer.name.split.0 }}</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-    </li>
-    {% elif user.volunteer %}
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'donations' %}">Donations</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'profile' %}">Hi, {{ user.volunteer.name.split.0 }}</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-    </li>
-    {% else %}
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'donations' %}">Donations</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="{% url 'login' %}">Login</a>
-    </li>
-    {% endif %}
-    </ul>
-    
 
 
-    </div>
-    <div class="box" style="height: 100px; border-radius: 0px 0px 10px 10px ; background-color: white; padding: 10px; width: fit-content; margin-left: 40px; border-width: 0 0px 6px 0px; border-color: #bbbbbb; border-style: solid;">
-      <a href="{% url 'internal_index' %}"><img class="logo" src="../../../media/nirmaan.png"
-      style="width: 180px; margin-top: -9px; align-self: center; padding: 5px;"></a>
-    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
 
-    <div class="box" style="height: 100px; border-radius: 0px 0px 10px 10px ; padding: 10px; width: fit-content; margin-left: 250px; background-color: #ffffff00; color: #f7f7f7; font-family: 'Montserrat', sans-serif;">
-      <div class="chapter">
-        <p class="chapter"><strong>BITS PILANI</strong> <br>
-        Student Chapter</p>
+          <li class="nav-item dropdown" style="margin-left: 0;">
+            <a href="{% url 'home' %}" class="nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="true" onfocus="drop()" id="dropdown">Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="menu">
+              <a class="dropdown-item" href="/projects/sko">Siksha Ki Ore</a>
+              <a class="dropdown-item" href="/projects/disha">Disha</a>
+              <a class="dropdown-item" href="/projects/utkarsh">Utkarsh</a>
+              <a class="dropdown-item" href="/projects/gb_baas">Gyan Bodh</a>
+              <a class="dropdown-item" href="/projects/pcd">Participatory Community Development</a>
+              <a class="dropdown-item" href="/projects/unnati_1">Unnati</a>
+              <a class="dropdown-item" href="/projects/unnati_2">Swayamshakti</a>
+              <a class="dropdown-item" href="/projects/sap">School Adoption Programme</a>
+              <a class="dropdown-item" href="/projects/pkp">Pilani Ki Pathshala</a>
+              <a class="dropdown-item" href="/projects/ye">Udaan</a>
+              <a class="dropdown-item" href="/projects/Pragati">Pragati</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'register_visitor' %}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mask_register' %}">Peahen</a>
+          </li>
+
+          {% if user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'all_visitors' %}">Visitors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'masks_dash' %}">SALES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+          </li>
+
+          {% elif user.volunteer.is_pl %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'donations' %}">Donations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'pl_dashboard' %}">Hi, {{ user.volunteer.name.split.0 }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+          </li>
+          {% elif user.volunteer %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'donations' %}">Donations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'profile' %}">Hi, {{ user.volunteer.name.split.0 }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'donations' %}">Donations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Login</a>
+          </li>
+          {% endif %}
+        </ul>
+
+
+
       </div>
-    </div>
+      <div class="box"
+        style="height: 100px; border-radius: 0px 0px 10px 10px ; background-color: white; padding: 10px; width: fit-content; margin-left: 40px; border-width: 0 0px 6px 0px; border-color: #bbbbbb; border-style: solid;">
+        <a href="{% url 'internal_index' %}"><img class="logo" src="../../../media/nirmaan.png"
+            style="width: 180px; margin-top: -9px; align-self: center; padding: 5px;"></a>
+      </div>
+
+      <div class="box"
+        style="height: 100px; border-radius: 0px 0px 10px 10px ; padding: 10px; width: fit-content; margin-left: 250px; background-color: #ffffff00; color: #f7f7f7; font-family: 'Montserrat', sans-serif;">
+        <div class="chapter">
+          <p class="chapter"><strong>BITS PILANI</strong> <br>
+            Student Chapter</p>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -741,16 +839,13 @@
         <br>
         <img class="home1" src="../../../media/rakhi2.png">
         <div class="rakhi">
-        <div class="text dispbtn">
-          
-          <center>
-          <h1 class="heading" style="color: white; font-weight: 800; text-transform: uppercase;">PROJECT RAKHI</h1>
-          <a href="https://forms.gle/oN7UK98W3kmm6J2J8">
-            <button class="team">
-              BUY NOW
-            </button>
-          </a>
-          </center>
+          <div class="text dispbtn">
+            <h1 class="heading" style="color: white; font-weight: 800; text-transform: uppercase;">PROJECT RAKHI</h1>
+            <a href="https://forms.gle/oN7UK98W3kmm6J2J8">
+              <button class="team">
+                BUY NOW
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -758,16 +853,16 @@
       <div class="item">
         <img class="home" src="../../../media/1.JPG">
       </div>
-    
+
       <div class="item">
         <img class="home" src="../../../media/2.png">
       </div>
-    
+
       <div class="item">
         <img class="home" src="../../../media/3.jpg">
       </div>
     </div>
-    
+
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="height: 95%;">
       <span class="glyphicon glyphicon-chevron-left"></span>
@@ -788,7 +883,7 @@
       Leadership. Since then, the organization has grown to work in several cities nationwide but the Pilani chapter
       still works with the people of villages around Pilani for their upliftment and operates from within the college
       campus.</p>
-  
+
     <br><br>
     <h3 style="text-align:center;">OUR <div class="yellow"> VISION</div>
     </h3>
@@ -799,7 +894,7 @@
     </h3>
     <p style="text-align: center;">To promote grassroots social innovations, volunteering spirit, active citizenship and
       social leadership among the youth of the nation.</p>
-  
+
   </div>
 
   <div class="bgimg-2 myDiv">
@@ -807,12 +902,13 @@
       <span
         style="background-color:transparent;font-size:25px;color: #f7f7f7; color: #fff; padding: 18px; font-size: 25px; letter-spacing: 10px;">"We
         have only one
-        <p>Passion,</p>the rise of a great<p>Nation"</p></span>
+        <p>Passion,</p>the rise of a great<p>Nation"</p>
+      </span>
     </div>
   </div>
 
   <div style="position:relative;text-align:center;;text-align: justify; background-color: 000;" class="myDiv">
-    <div style="color:#ddd;background-color:#000;padding:50px 80px;margin-left: 0;">
+    <div style="color:#ddd;background-color:#000;padding:50px;margin-left: 0;">
       <h3 style="text-align:center; color: white;">OUR <div class="yellow"> PROJECTS</div>
       </h3>
       <p>
@@ -841,50 +937,66 @@
         the various employment options available.
         <br><br>
 
-        <h3 style="text-align:center; color: white;">PUBLIC <div class="yellow"> RELATIONS </div> DEPARTMENT
-        </h3><br>
-        
+      <h3 style="text-align:center; color: white;">PUBLIC <div class="yellow"> RELATIONS </div> DEPARTMENT
+      </h3><br>
+
+      <p>
+        The Public Relations Department or PRD, is the face of Nirmaan Organisation, Pilani chapter. PRD is divided into
+        subsections which are content writing, videography, graphic designing, app, and website development. We work
+        closely
+        with the volunteers and alumni associated with Nirmaan and help create awareness about their work both inside
+        and
+        outside of campus.
+      </p>
+      <br>
+      <center>
         <p>
-          The Public Relations Department or PRD, is the face of Nirmaan Organisation, Pilani chapter. PRD is divided into
-          subsections which are content writing, videography, graphic designing, app, and website development. We work closely
-          with the volunteers and alumni associated with Nirmaan and help create awareness about their work both inside and
-          outside of campus.
+          <a href="{% url 'prd_volunteers' %}"><button class="btn btn-outline-info"><b>MEET THE TEAM</b></button></a>
         </p>
-        <br>
-        <center>
-          <p>
-            <a href="{% url 'prd_volunteers' %}"><button class="btn btn-outline-info"><b>MEET THE TEAM</b></button></a>
-          </p>
-        </center>
-        
-        <br><br>
+      </center>
+
+      <br><br>
 
       <h3 style="text-align:center; color: white;">OUR <div class="yellow"> EVENTS</div>
       </h3><br>
 
-      <div class="card-group" style="margin-right: auto; margin-left: 2%;">
-        <div class="card" style="width: 20rem; margin-right: 5rem; border-radius: 10px; border: 3px solid #ffb300; ">
-          <img src="../../../media/banner_images/Utkarsh.jpg" class="card-img-top" alt="../../../media/" style="width: 100%; height: 200px; border-radius: 5px;">
+      <div class="card-group"
+        style="margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; align-items: center; justify-content: center;">
+        <div class="card" style="width: 20rem; border-radius: 10px; border: 3px solid #ffb300; ">
+          <img src="../../../media/banner_images/Utkarsh.jpg" class="card-img-top" alt="../../../media/"
+            style="width: 100%; height: 200px; border-radius: 5px;">
           <div class="card-body">
-            <h3 class="card-title" style="color: #000; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Joy Of Giving Week</h3>
-            <p class="card-text" style="color: #222222;">Joy of giving week is our flagship annual event. All the beneficiaries gather in our college campus for
+            <h3 class="card-title"
+              style="color: #000; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              Joy Of Giving Week</h3>
+            <p class="card-text" style="color: #222222;">Joy of giving week is our flagship annual event. All the
+              beneficiaries gather in our college campus for
               various fun and educational activities.</p>
           </div>
         </div>
-        <div class="card" style="width: 20rem; margin-right: 5rem; border-radius: 10px; border: 3px solid #ffb300; ">
-          <img src="../../../media/banner_images/SKO.JPG" class="card-img-top" alt="../../../media/" style="border-radius: 5px; height: 200px;">
+        <div class="card" style="width: 20rem; border-radius: 10px; border: 3px solid #ffb300; ">
+          <img src="../../../media/banner_images/SKO.JPG" class="card-img-top" alt="../../../media/"
+            style="border-radius: 5px; height: 200px;">
           <div class="card-body">
             <a href="{% url 'sorad' %}">
-              <h3 class="card-title" style="color: #000; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">SORAD</h3>
+              <h3 class="card-title"
+                style="color: #000; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                SORAD</h3>
             </a>
-            <p class="card-text" style="color: #222222;">Save One Rupee A Day (SORAD) is our annual flagship event and one of the biggest fund collection drives on campus in which hundreds of students and faculties pledge to save atleast one rupee everyday for a noble cause.</p>
+            <p class="card-text" style="color: #222222;">Save One Rupee A Day (SORAD) is our annual flagship event and
+              one of the biggest fund collection drives on campus in which hundreds of students and faculties pledge to
+              save atleast one rupee everyday for a noble cause.</p>
           </div>
         </div>
-        <div class="card" style="width: 20rem; margin-right: 5rem; border-radius: 10px; border: 3px solid #ffb300; ">
-          <img src="../../../media/banner_images/SAP.jpg" class="card-img-top" alt="..." style="width: 100%; height: 200px; border-radius: 5px;">
+        <div class="card" style="width: 20rem; border-radius: 10px; border: 3px solid #ffb300; ">
+          <img src="../../../media/banner_images/SAP.jpg" class="card-img-top" alt="..."
+            style="width: 100%; height: 200px; border-radius: 5px;">
           <div class="card-body">
-            <h3 class="card-title" style="color: #000; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Punya</h3>
-            <p class="card-text" style="color: #222222;">Punya is our bi-annual cycle collection and redistribution drive, benefitting thousands of underpriviledged students and communities.<br></p>
+            <h3 class="card-title"
+              style="color: #000; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+              Punya</h3>
+            <p class="card-text" style="color: #222222;">Punya is our bi-annual cycle collection and redistribution
+              drive, benefitting thousands of underpriviledged students and communities.<br></p>
           </div>
         </div>
       </div>
@@ -908,10 +1020,23 @@
   </div>
 
   <style>
+    .loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: black;
+      z-index: 1001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
     .fa {
       background: black;
     }
-  
+
     .fa-facebook {
       padding-top: 8px;
       text-align: center;
@@ -924,7 +1049,7 @@
       width: 40px;
       height: 40px;
     }
-  
+
     .fa-instagram {
       padding-top: 8px;
       vertical-align: middle;
@@ -939,18 +1064,18 @@
       height: 40px;
     }
 
-    .footer-link{
+    .footer-link {
       color: white;
     }
 
-    .footer-link:hover{
+    .footer-link:hover {
       color: #ffb300;
     }
   </style>
 
   <div id="footer">
     <table class="footer-bs" style="background-color: #000; border-radius: 0;">
-      <tr>
+      <tr class="footer-tr">
         <td style="width: 5vw;"></td>
         <td style="width:40vw;">
           <a><img src="../../../media/nirmaan.png" style="z-index: 1; height: 100px;"></a>
@@ -960,80 +1085,91 @@
             E-mail: bitspilani.pr@nirmaan.org
             <br>
             Birla Institute of Technology and Science, Pilani<br>
-            Vidya Vihar, Pilani, Rajasthan - 333031</p>
+            Vidya Vihar, Pilani, Rajasthan - 333031
+          </p>
         </td>
-        <td style="width:30vw;">
-          <div class="col footer-social animated fadeInDown">
-            <h5 style="color: white;">Quick Links</h5>
-            <ul style="list-style: none;">
-              <li style="margin-left: -10%;"><a class="footer-link" style="font-size: small; list-style: none; color: white; text-decoration: none;" href="{% url 'internal_index' %}">HOME</a></li>
-              <li style="margin-left: -10%;"><a class="footer-link" style="font-size: small; list-style: none; color: white; text-decoration: none;" href="{% url 'about' %}">ABOUT</a></li>
-              <li style="margin-left: -10%;"><a class="footer-link" style="font-size: small; list-style: none; color: white; text-decoration: none;" href="{% url 'home' %}">PROJECTS</a></li>
-              <li style="margin-left: -10%;"><a class="footer-link" style="font-size: small; list-style: none; color: white; text-decoration: none;" href="{% url 'donations' %}">DONATIONS</a></li>
-              <li style="margin-left: -10%;"><a class="footer-link" style="font-size: small; list-style: none; color: white; text-decoration: none;" href="{% url 'troubleshooting' %}">TROUBLESHOOTING</a></li>
-            </ul>
-          </div>
+        <td style="width:30vw;" class="footer-social animated fadeInDown">
+          <h5 style="color: white;">Quick Links</h5>
+          <ul style="list-style: none;">
+            <li style="margin-left: -10%;"><a class="footer-link"
+                style="font-size: small; list-style: none; color: white; text-decoration: none;"
+                href="{% url 'internal_index' %}">HOME</a></li>
+            <li style="margin-left: -10%;"><a class="footer-link"
+                style="font-size: small; list-style: none; color: white; text-decoration: none;"
+                href="{% url 'about' %}">ABOUT</a></li>
+            <li style="margin-left: -10%;"><a class="footer-link"
+                style="font-size: small; list-style: none; color: white; text-decoration: none;"
+                href="{% url 'home' %}">PROJECTS</a></li>
+            <li style="margin-left: -10%;"><a class="footer-link"
+                style="font-size: small; list-style: none; color: white; text-decoration: none;"
+                href="{% url 'donations' %}">DONATIONS</a></li>
+            <li style="margin-left: -10%;"><a class="footer-link"
+                style="font-size: small; list-style: none; color: white; text-decoration: none;"
+                href="{% url 'troubleshooting' %}">TROUBLESHOOTING</a></li>
+          </ul>
         </td>
-        <td>
-          <div class="col footer-social animated fadeInDown">
-            <h5 style="color: white; margin-left: 11%;">&nbsp;&nbsp;Follow Us</h5>
-            <ul>
-              <li style="list-style: none; margin-left: -10%; margin-bottom: 5px;"><a href="https://www.facebook.com/NirmaanPilaniPage/" class="fa fa-facebook" style="color: white; text-decoration: none;"></a></li>
-              <li style="list-style: none; margin-left: -10%;"><a href="https://www.instagram.com/nirmaan_pilani/" class="fa fa-instagram" style="color: white; text-decoration: none;"></a></li>
-            </ul>
-          </div>
+        <td class="footer-social animated fadeInDown">
+          <h5 style="color: white; margin-left: 11%;">&nbsp;&nbsp;Follow Us</h5>
+          <ul class="footer-icons">
+            <li style="list-style: none; margin-left: -10%; margin-bottom: 5px;"><a
+                href="https://www.facebook.com/NirmaanPilaniPage/" class="fa fa-facebook"
+                style="color: white; text-decoration: none;"></a></li>
+            <li style="list-style: none; margin-left: -10%;"><a href="https://www.instagram.com/nirmaan_pilani/"
+                class="fa fa-instagram" style="color: white; text-decoration: none;"></a></li>
+          </ul>
         </td>
-        
       </tr>
-      
-      
       <br><br>
-      <tr style="height: 3vh; margin-top: 5vw;">
-  
-      </tr>
+      <tr style="height: 3vh; margin-top: 5vw;"></tr>
     </table>
   </div>
 
-  
-
   <script src="data/main.js"></script>
-
   <script type="text/javascript">
-    var nav = document.getElementById("navbar");
-    var box = document.getElementsByClassName("box");
-    var carousel = document.getElementById("myCarousel");
-    var footer = document.getElementById("footer");
-    nav.style.display = "none";
-    footer.style.display = "none";
-    carousel.style.display = "none";
+    // var nav = document.getElementById("navbar");
+    // var box = document.getElementsByClassName("box");
+    // var carousel = document.getElementById("myCarousel");
+    // var footer = document.getElementById("footer");
+    window.addEventListener("load", () => {
+      document.querySelector('.loader-wrapper').style.animation = 'disappear 1.6s linear';
 
-    var x = document.getElementsByClassName("myDiv");
-    var i;
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    
-    function load() {
-      carousel.style.display = "none";
-      myVar = setTimeout(fadePage, 3000);
-    }
+      setInterval(() => {
+        document.querySelector('.loader-wrapper').style.display = 'none';
+      }, 1600);
+    })
 
-    function fadePage() {
-      loader = document.getElementById("loader");
-      loader.parentNode.removeChild(loader);
-      myVar = setTimeout(showPage, 200);
-    }
 
-    function showPage() {
-      navbar.style.display = "block";
-      carousel.style.display = "block";
-      var x = document.getElementsByClassName("myDiv");
-      var i;
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "block";
-      }
-      footer.style.display = "block";
-    }
+    // nav.style.display = "none";
+    // footer.style.display = "none";
+    // carousel.style.display = "none";
+
+    // var x = document.getElementsByClassName("myDiv");
+    // var i;
+    // for (i = 0; i < x.length; i++) {
+    //   x[i].style.display = "none";
+    // }
+
+    // function load() {
+    //   carousel.style.display = "none";
+    //   myVar = setTimeout(fadePage, 3000);
+    // }
+
+    // function fadePage() {
+    //   loader = document.getElementById("loader");
+    //   loader.parentNode.removeChild(loader);
+    //   myVar = setTimeout(showPage, 200);
+    // // }
+
+    // function showPage() {
+    //   navbar.style.display = "block";
+    //   carousel.style.display = "block";
+    //   var x = document.getElementsByClassName("myDiv");
+    //   var i;
+    //   for (i = 0; i < x.length; i++) {
+    //     x[i].style.display = "block";
+    //   }
+    //   footer.style.display = "block";
+    // }
 
   </script>
 
