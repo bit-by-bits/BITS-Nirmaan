@@ -16,4 +16,10 @@ The website is currently hosted at <a href="https://bitspilani.nirmaan.org">http
 
 <i>Utkarsh Sharma<br>
 Prateek Kashyap<br></i>
-<b>Developers, Nirmaan<br></b>
+<b>Developers, Nirmaan<br></b><br>
+
+<i>Samriddha Sinha</i><br>
+<b>Senior Developer, Nirmaan</b><br><br>
+
+<i>Sankha Das</i><br>
+<b>Senior Developer and Original Creator, Nirmaan</b><br><br>
