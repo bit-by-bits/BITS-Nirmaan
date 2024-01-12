@@ -1,25 +1,37 @@
-# BITS NIRMAAN
-Official website of Nirmaan Organization (BITS Pilani Chapter) it tells about Nirmaan's history, motto and new initiatives. It has the functionality to add, update and manage posts about new initiatives and events undertaken by the organization. All the current volunteers, including the excoms, are listed here.
+# BITS NIRMAAN - Official Website
 
-Some Features : 
-1. Writing blog-like posts about initiatives and events
-2. Links to social media accounts 
-3. Likes and comments on posts
-4. Easy Update and Deletion of posts
-5. User authentication for creation and updating posts
+Welcome to the official website of Nirmaan Organization, BITS Pilani Chapter! This platform provides information about Nirmaan's rich history, core values, and ongoing initiatives. It also facilitates the creation, update, and management of posts regarding new initiatives and events organized by the organization. In addition, you can find a comprehensive list of current volunteers, including the executive committee members.
 
-Tech stack used was Python, Django, HTML, CSS, JQuery and Javascript. <br>
-This website was made by our seniors and appropriately modified by us. The launch of the website on a paid server is yet to be completed and will be done shortly after reviewing final changes.<hr>
+## Key Features
+1. **Blog-like Posts:** Share detailed information about initiatives and events through blog-like posts.
+2. **Social Media Integration:** Links to Nirmaan's social media accounts for easy access and interaction.
+3. **Engagement:** Users can like and comment on posts, fostering a sense of community.
+4. **Effortless Updates and Deletions:** Easily manage and update posts with a user-friendly interface.
+5. **User Authentication:** Securely create and update posts with user authentication.
 
-The website is currently hosted at <a href="https://bitspilani.nirmaan.org">https://bitspilani.nirmaan.org</a>
-<br>
+## Technology Stack
+The website is built using the following technologies:
+- **Python**
+- **Django**
+- **HTML/CSS**
+- **jQuery**
+- **JavaScript**
 
-<i>Utkarsh Sharma<br>
-Prateek Kashyap<br></i>
-<b>Developers, Nirmaan<br></b><br>
+## Project Development
+The website was initially created by our seniors and has been appropriately modified by the current development team. The launch of the website on a paid server is in progress and will be completed shortly after reviewing final changes.
 
-<i>Samriddha Sinha</i><br>
-<b>Senior Developer, Nirmaan</b><br><br>
+## Visit the Website
+The live version of the website is accessible at [https://bitspilani.nirmaan.org](https://bitspilani.nirmaan.org).
 
-<i>Sankha Das</i><br>
-<b>Senior Developer and Original Creator, Nirmaan</b><br><br>
+## Developers
+**Utkarsh Sharma**<br>
+**Prateek Kashyap**<br>
+_Developers, Nirmaan_
+
+**Samriddha Sinha**<br>
+_Senior Developer, Nirmaan_
+
+**Sankha Das**<br>
+_Senior Developer and Original Creator, Nirmaan_
+
+Feel free to explore the website and stay tuned for more updates! If you have any feedback or suggestions, please reach out to our development team.

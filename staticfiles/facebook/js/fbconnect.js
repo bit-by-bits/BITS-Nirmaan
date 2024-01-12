@@ -1,24 +1,24 @@
-/* global document, window, FB */
 (function () {
   "use strict";
 
-  function postForm(action, data) {
-    var f = document.createElement("form");
-    f.method = "POST";
-    f.action = action;
+  const createForm = (action, data) => {
+    const form = document.createElement("form");
+    form.method = "POST";
+    form.action = action;
 
-    for (var key in data) {
-      var d = document.createElement("input");
-      d.type = "hidden";
-      d.name = key;
-      d.value = data[key];
-      f.appendChild(d);
-    }
-    document.body.appendChild(f);
-    f.submit();
-  }
+    Object.entries(data).forEach(([key, value]) => {
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = key;
+      input.value = value;
+      form.appendChild(input);
+    });
 
-  function setLocationHref(url) {
+    document.body.appendChild(form);
+    form.submit();
+  };
+
+  const setLocationHref = (url) => {
     if (typeof url === "function") {
       // Deprecated -- instead, override
       // allauth.facebook.onLoginError et al directly.
@@ -26,31 +26,30 @@
     } else {
       window.location.href = url;
     }
-  }
+  };
 
-  var allauth = (window.allauth = window.allauth || {});
-  var fbSettings = JSON.parse(
+  const allauth = (window.allauth = window.allauth || {});
+  const fbSettings = JSON.parse(
     document.getElementById("allauth-facebook-settings").innerHTML
   );
-  var fbInitialized = false;
+  let fbInitialized = false;
 
   allauth.facebook = {
-    init: function (opts) {
+    init: (opts) => {
       this.opts = opts;
 
-      window.fbAsyncInit = function () {
+      window.fbAsyncInit = () => {
         FB.init(opts.initParams);
         fbInitialized = true;
         allauth.facebook.onInit();
       };
 
       (function (d) {
-        var js;
-        var id = "facebook-jssdk";
+        const js = d.createElement("script");
+        const id = "facebook-jssdk";
         if (d.getElementById(id)) {
           return;
         }
-        js = d.createElement("script");
         js.id = id;
         js.async = true;
         js.src = opts.sdkUrl;
@@ -58,21 +57,16 @@
       })(document);
     },
 
-    onInit: function () {},
+    onInit: () => {},
 
-    login: function (nextUrl, action, process, scope) {
-      var self = this;
+    login: (nextUrl, action, process, scope) => {
+      const self = this;
       if (!fbInitialized) {
-        var url =
-          this.opts.loginUrl +
-          "?next=" +
-          encodeURIComponent(nextUrl) +
-          "&action=" +
-          encodeURIComponent(action) +
-          "&process=" +
-          encodeURIComponent(process) +
-          "&scope=" +
-          encodeURIComponent(scope);
+        const url =
+          `${this.opts.loginUrl}?next=${encodeURIComponent(nextUrl)}` +
+          `&action=${encodeURIComponent(action)}` +
+          `&process=${encodeURIComponent(process)}` +
+          `&scope=${encodeURIComponent(scope)}`;
         setLocationHref(url);
         return;
       }
@@ -83,13 +77,13 @@
         this.opts.loginOptions.scope = scope;
       }
 
-      FB.login(function (response) {
+      FB.login((response) => {
         if (response.authResponse) {
           self.onLoginSuccess(response, nextUrl, process);
         } else if (
           response &&
           response.status &&
-          ["not_authorized", "unknown"].indexOf(response.status) > -1
+          ["not_authorized", "unknown"].includes(response.status)
         ) {
           self.onLoginCanceled(response);
         } else {
@@ -98,16 +92,16 @@
       }, self.opts.loginOptions);
     },
 
-    onLoginCanceled: function (/* response */) {
+    onLoginCanceled: (/* response */) => {
       setLocationHref(this.opts.cancelUrl);
     },
 
-    onLoginError: function (/* response */) {
+    onLoginError: (/* response */) => {
       setLocationHref(this.opts.errorUrl);
     },
 
-    onLoginSuccess: function (response, nextUrl, process) {
-      var data = {
+    onLoginSuccess: (response, nextUrl, process) => {
+      const data = {
         next: nextUrl || "",
         process: process,
         access_token: response.authResponse.accessToken,
@@ -115,26 +109,26 @@
         csrfmiddlewaretoken: this.opts.csrfToken,
       };
 
-      postForm(this.opts.loginByTokenUrl, data);
+      createForm(this.opts.loginByTokenUrl, data);
     },
 
-    logout: function (nextUrl) {
-      var self = this;
+    logout: (nextUrl) => {
+      const self = this;
       if (!fbInitialized) {
         return;
       }
-      FB.logout(function (response) {
+      FB.logout((response) => {
         self.onLogoutSuccess(response, nextUrl);
       });
     },
 
-    onLogoutSuccess: function (response, nextUrl) {
-      var data = {
+    onLogoutSuccess: (response, nextUrl) => {
+      const data = {
         next: nextUrl || "",
         csrfmiddlewaretoken: this.opts.csrfToken,
       };
 
-      postForm(this.opts.logoutUrl, data);
+      createForm(this.opts.logoutUrl, data);
     },
   };
 
